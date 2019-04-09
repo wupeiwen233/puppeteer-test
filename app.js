@@ -38,9 +38,9 @@ const fs = require('fs');
         'defaultViewport': { 'width': 1920, 'height': 1080 }
     });
     const page = await browser.newPage();
-    // 在这里隐去了真实网址
+    // 在这里隐去了真实网址和登陆密码
     await page.goto('https://www.baidu.com');
-    const inputText = 'april.c@istarmax.com'
+    const inputText = 'balalanengliang'
     await page.type('#email', inputText, { delay: 0 });
     await page.type('#password', inputText, { delay: 0 });
     await page.keyboard.press('Enter');
